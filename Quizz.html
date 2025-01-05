@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz</title>
+    <link rel="stylesheet" href="css/style_quizz.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body class="dark_mode">
+    <header class="header dark_mode">
+      <div class="logo" onclick="cambio()">
+          <img src="img/logo.png" alt="">
+      </div>
+      <i class="fas fa-sun" id="icon"></i>
+      <nav class="nav-links">
+          <ul>
+              <li><a href="galeria.html">Galeria</a></li>
+              <li><a href="slider.html">Slider</a></li>
+              <li><a href="index.html">Inicio</a></li>
+          </ul>
+      </nav>
+      
+
+      <a href="#" onclick="openNav()" class="menu"><button>Menu</button></a>
+
+          <div id="mobile-menu" class="overlay dark_mode">
+              <a href="#" onclick="closeNav()" class="close">&times;</a>
+              <div class="overlay-content">
+                  <a href="index.html">Inicio</a>
+                  <a href="slider.html">Slider</a>
+                  <a href="galeria.html">Galeria</a>
+              </div>
+          </div>
+  </header>
+    <main>
+      <div class="username" id="userInfo">
+        <div class="username-content" id="usernameContent">
+          <p>Introduce tu nombre</p>
+        <input type="text" name="username" id="user" class="textbox" value="">
+        <div class="btn-user" onclick="registerName()"><p>Empezar</p></div>
+        </div>
+        
+        <div class="alerta" id="alert">
+          <div class="btn-close"><h4 href="#">&times;</h4></div>
+          <p>Tienes que contestar todas las preguntas</p>
+        </div>
+        <div class="user-message" id="userMessage">
+          <div class="btn-close"><h4 href="#">&times;</h4></div>
+          <p id="comment">Hola mundo veamos que esperas</p>
+          <h5 id="showScore">Hola mundo</h5>
+        </div>
+      </div>
+      <div class="section"><p>Responde las siguientes preguntas</p></div>
+      <form action="" id="listaDePreguntas">
+      </form>
+      <div class="btn-check" onclick="evaluar()"><p>Finalizar</p></div>
+    </main>
+    <script src="scripts/quizz.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/mobile_btn.js"></script>
+  </body>
+</html>

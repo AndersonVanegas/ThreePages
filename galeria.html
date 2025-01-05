@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ander</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark_mode">
+    <header class="header dark_mode">
+        <div class="logo" onclick="cambio()">
+            <img src="img/logo.png" alt="">
+        </div>
+        <i class="fas fa-sun" id="icon"></i>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="slider.html">Slider</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Quizz.html">Quizz</a></li>
+            </ul>
+        </nav>
+        
+
+        <a href="#" onclick="openNav()" class="menu"><button>Menu</button></a>
+
+            <div id="mobile-menu" class="overlay dark_mode">
+                <a href="#" onclick="closeNav()" class="close">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Inicio</a>
+                    <a href="slider.html">Slider</a>
+                    <a href="Quizz.html">Quizz</a>
+                </div>
+            </div>
+    </header>
+    <main class="main-gallery">
+        <div class="titulo">
+            <h3>Galeria de fotos</h3>
+        </div>
+        <div class="gallery_container">
+            <img src="img/galeria/img1.jpg" alt="">
+            <img src="img/galeria/img2.jpg" alt="">
+            <img src="img/galeria/img3.jpg" alt="">
+            <img src="img/galeria/img4.jpg" alt="">
+            <img src="img/galeria/img5.jpg" alt="">
+            <img src="img/galeria/img6.jpg" alt="">
+            <img src="img/galeria/img7.jpg" alt="">
+        </div>
+    </main>
+    <iframe src="footer.html" style="border: none;" width="100%"></iframe>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/mobile_btn.js"></script>
+    <script src="scripts/prueba.js"></script>
+</body>
+</html>

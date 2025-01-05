@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ander</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body class="dark_mode">
+    <header class="header dark_mode">
+        <div class="logo" onclick="cambio()">
+            <img src="img/logo.png" alt="">
+        </div>
+        <i class="fas fa-sun" id="icon"></i>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="slider.html">Slider</a></li>
+                <li><a href="Quizz.html">Quizz</a></li>
+            </ul>
+        </nav>
+        
+
+        <a href="#" onclick="openNav()" class="menu"><button>Menu</button></a>
+
+            <div id="mobile-menu" class="overlay dark_mode">
+                <a href="#" onclick="closeNav()" class="close">&times;</a>
+                <div class="overlay-content">
+                    <a href="slider.html">Slider</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="Quizz.html">Quizz</a>
+                </div>
+            </div>
+    </header>
+    <main class="main-index">
+        <section class="info-container dark_mode">
+            <div class="image-container">
+                <img src="img/cards/1.webp" alt="">
+            </div>
+            <div class="text-container">
+                <h2>Iron Man</h2>
+                <p class="tittle">Tony Stark</p>
+                <p class="description">Tony Stark es un genio inventor y multimillonario que utiliza su inteligencia para construir una armadura avanzada, convirtiéndose en el superhéroe Iron Man. Su ingenio y tecnología lo hacen un formidable combatiente.</p>
+            </div>
+        </section>
+
+        <section class="info-container dark_mode">
+            <div class="image-container">
+                <img src="img/cards/2.jpg" alt="">
+            </div>
+            <div class="text-container">
+                <h2>Dios del trueno</h2>
+                <p class="tittle">Thor</p>
+                <p class="description">Thor es el dios del trueno, hijo de Odín, que empuña el martillo Mjolnir. Posee fuerza sobrehumana y controla los elementos, defendiendo tanto Asgard como la Tierra de fuerzas oscuras.</p>
+            </div>
+        </section>
+
+        <section class="info-container dark_mode">
+            <div class="image-container">
+                <img src="img/cards/3.jpg" alt="">
+            </div>
+            <div class="text-container">
+                <h2>Capitan America</h2>
+                <p class="tittle">Steve Rogers</p>
+                <p class="description">Steve Rogers es un soldado que, tras recibir un suero experimental, se convierte en el Capitán América, el símbolo de la justicia. Con su escudo indestructible y habilidades sobrehumanas, lucha por la libertad y la igualdad.</p>
+            </div>
+        </section>
+
+        <section class="info-container dark_mode">
+            <div class="image-container">
+                <img src="img/cards/4.jpg" alt="">
+            </div>
+            <div class="text-container">
+                <h2>HULK</h2>
+                <p class="tittle">Bruce Banner</p>
+                <p class="description">Bruce Banner es un científico que, tras una exposición a radiación gamma, se transforma en Hulk, una poderosa criatura verde con fuerza descomunal. La transformación es desencadenada por la ira, lo que lo convierte en un héroe y una amenaza.</p>
+            </div>
+        </section>
+
+        <section class="info-container dark_mode">
+            <div class="image-container">
+                <img src="img/cards/5.jpg" alt="">
+            </div>
+            <div class="text-container">
+                <h2>Hawkeye</h2>
+                <p class="tittle">Clint Barton</p>
+                <p class="description">Clint Barton, conocido como Hawkeye, es un experto arquero y tirador. A pesar de no tener superpoderes, su precisión y habilidades en combate lo convierten en un miembro clave de los Vengadores.</p>
+            </div>
+        </section>
+    </main>
+    <iframe src="footer.html" style="border: none;" width="100%"></iframe>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/mobile_btn.js"></script>
+</body>
+</html>
